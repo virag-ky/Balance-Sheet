@@ -1,0 +1,32 @@
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#sheet {
+  margin: 0 auto;
+  width: 60%;
+  max-width: 700px;
+  min-width: 280px;
+  border: 1px solid darkblue;
+}
+h1,
+h1 + h2 {
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.note {
+  padding: 10px;
+  font-style: italic;
+  margin-left: 20px;
+}
+span[class="name"] {
+  text-align: left;
+  width: 100%;
+}
+span:not(.name) {
+  text-align: right;
+  min-width: 15%;
+}
