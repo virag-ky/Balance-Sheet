@@ -5,7 +5,7 @@ body {
   margin: 0 auto;
   width: 60%;
   max-width: 700px;
-  min-width: 280px;
+  min-width: 260px;
   border: 1px solid darkslategray;
   padding: 0 10px;
 }
@@ -62,4 +62,23 @@ p[class~="total"] {
 .row[tabindex]:focus {
   color: white;
   background-color: darkslategrey;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+  h1 + h2 {
+    font-size: 15px;
+  }
+  h2:not(#header h2) {
+    font-size: 15px;
+    padding: 2px;
+  }
+  .note {
+    font-size: 10px;
+  }
+  .row {
+    padding: 2px;
+    font-size: 12px;
+  }
 }
