@@ -1,21 +1,34 @@
 body {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
 }
 #sheet {
   margin: 0 auto;
   width: 60%;
   max-width: 700px;
   min-width: 280px;
-  border: 1px solid darkblue;
+  border: 1px solid darkslategray;
+  padding: 10px;
 }
 h1,
 h1 + h2 {
-  text-align: center;
+  text-align: left;
 }
+h1 + h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
 .row {
   display: flex;
   justify-content: flex-end;
   padding: 10px;
+  border-bottom: 1px solid darkslategray;
+}
+.row:nth-of-type(odd):not(.first) {
+  background-color: rgb(223, 230, 225);
+}
+.row:last-child {
+  background-color: transparent;
 }
 .note {
   padding: 10px;
@@ -29,4 +42,17 @@ span[class="name"] {
 span:not(.name) {
   text-align: right;
   min-width: 15%;
+}
+h2:not(#header h2) {
+  padding: 5px;
+  font-size: 22px;
+  font-weight: normal;
+  background-color: rgb(89, 155, 89);
+}
+p[class~="total"] {
+  font-weight: 900;
+  border-bottom: 6px double darkslategray;
+}
+.current {
+  font-style: italic;
 }
