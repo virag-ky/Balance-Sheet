@@ -7,7 +7,7 @@ body {
   max-width: 700px;
   min-width: 280px;
   border: 1px solid darkslategray;
-  padding: 10px;
+  padding: 0 10px;
 }
 h1,
 h1 + h2 {
@@ -31,7 +31,6 @@ h1 + h2 {
   background-color: transparent;
 }
 .note {
-  padding: 10px;
   font-style: italic;
   margin-left: 20px;
 }
@@ -55,4 +54,12 @@ p[class~="total"] {
 }
 .current {
   font-style: italic;
+}
+.row[tabindex]:hover {
+  background-color: rgb(103, 134, 134);
+  cursor: pointer;
+}
+.row[tabindex]:focus {
+  color: white;
+  background-color: darkslategrey;
 }
